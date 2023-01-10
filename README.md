@@ -19,7 +19,7 @@ Follow these simple steps to start guessing:
 
 - Invite Classify to your server: [https://discord.com/api/oauth2/authorize?client_id=779694650730086411&permissions=2147830784&scope=bot%20applications.commands](https://discord.com/api/oauth2/authorize?client_id=779694650730086411&permissions=2147830784&scope=bot%20applications.commands)
 
-- Run the `/panel`
+- Run the `/panel` command
 
 Have fun!
 
@@ -33,6 +33,16 @@ Public leaderboard; Yes, everyone has the chance to get on there, simply play an
 We only save your public Discord ID and the amount of guesses (wins) you have/had. 
 
 ---
+
+# Faq
+> #### Can I add my own code?
+Yes you can, simply open a PR that adds the given code to the `data/<language>` folder. Make sure to include it in the `src/structures/FilePaths.ts` file too (if it doesn't exist yet)
+
+> #### How many languages are supported?
+A few, many, it depends. I try to support as many as possible, but it is hard to keep up with all the languages. If you want to add your own, please read the previous question.
+
+> #### Can I download the Code and use it on my own bot?
+No. I wont help you with it, invite it and use it the basic way. 
 
 > #### How do you detect/guess languages correctly?
 

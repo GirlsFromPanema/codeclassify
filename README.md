@@ -14,6 +14,24 @@ Guess programming languages on Discord.
 </strong>
 </p>
 
+### Get started
+Follow these simple steps to start guessing: 
+
+- Invite Classify to your server: [https://discord.com/api/oauth2/authorize?client_id=779694650730086411&permissions=2147830784&scope=bot%20applications.commands](https://discord.com/api/oauth2/authorize?client_id=779694650730086411&permissions=2147830784&scope=bot%20applications.commands)
+
+- Run the `/panel`
+
+Have fun!
+
+---
+
+#### Privacy
+Simple playing does nothing, but once you win (guess correctly), we store your success somewhere deep in the woods. Not even the magic raindeers can see your private data, you have the full power. 
+
+Public leaderboard; Yes, everyone has the chance to get on there, simply play and try to guess as many languages as possible. If you want to leave the leaderboard completely, run `/reset`. This will delete all of your saved data.
+
+We only save your public Discord ID and the amount of guesses (wins) you have/had. 
+
 ---
 
 > #### How do you detect/guess languages correctly?

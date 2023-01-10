@@ -51,9 +51,7 @@ import net.dv8tion.jda.api.JDABuilder;
 ```
 
 Kotlin; moving on with "package", you pretty much know that we are in the JVM-language family (Kotlin, Scala, Java, Groovy). But Kotlin is known for his `fun` keyword (stands for function), and for declaring immutable variables with `val`
-
 ```kt
-
 package template
 
 val name = "John"

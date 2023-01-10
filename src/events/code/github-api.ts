@@ -116,7 +116,7 @@ export default class InteractionCreateEvent extends BaseEvent {
 
             message.reply(
               `🎉 | Awesome! You guessed it right!\nYou now have \`${
-                userQuery.guesses + 1 || 1
+                userQuery.guesses || 1
               }\` correct guesses!`
             );
 

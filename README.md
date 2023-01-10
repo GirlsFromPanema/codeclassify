@@ -17,7 +17,7 @@ Guess programming languages on Discord.
 ### Get started
 Follow these simple steps to start guessing: 
 
-- Invite Classify to your server: [https://discord.com/api/oauth2/authorize?client_id=779694650730086411&permissions=2147830784&scope=bot%20applications.commands](https://discord.com/api/oauth2/authorize?client_id=779694650730086411&permissions=2147830784&scope=bot%20applications.commands)
+- Invite Classify to your server: [https://discord.com/api/oauth2/authorize?client_id=1062415136138219571&permissions=2147830784&scope=bot%20applications.commands](https://discord.com/api/oauth2/authorize?client_id=1062415136138219571&permissions=2147830784&scope=bot%20applications.commands)
 
 - Run the `/panel` command
 

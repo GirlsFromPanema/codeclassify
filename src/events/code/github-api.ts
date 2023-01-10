@@ -13,13 +13,14 @@ import { BaseEvent } from "../../structures/Event";
 import emojis from "../../styles/emojis";
 import { ExtendedButtonInteraction } from "../../typings/Command";
 
-import { getFileCode, filePath } from "../../api/discord/randomDiscord";
+import { getFileCode, filePath } from "../../api/github/randomGithub";
 import { fileExtensionsToLanguages } from "../../extensions";
-
 import UserModel from "../../models/User";
 
 const buttonCooldown = new Set<number | Snowflake>();
 const cooldown: number = 30000;
+
+type FileCode = Array<string>;
 
 const panelRow = new ActionRowBuilder<ButtonBuilder>().addComponents(
   new ButtonBuilder()
@@ -46,7 +47,7 @@ export default class InteractionCreateEvent extends BaseEvent {
   }
   async run(_client: ExtendedClient, interaction: ExtendedButtonInteraction) {
     switch (interaction.customId) {
-      case "discord-api": {
+      case "github-api": {
         const member = interaction.member as GuildMember;
 
         const panelEmbedMessage = interaction.message;
@@ -64,7 +65,7 @@ export default class InteractionCreateEvent extends BaseEvent {
 
         const pendingEmbed = new EmbedBuilder()
           .setDescription(
-            `${member} started Game mode: \`Discord\`, game begins in <t:${
+            `${member} started Game mode: \`Random\`, game begins in <t:${
               Math.floor(Date.now() / 1000) + 10
             }:R>`
           )
@@ -79,7 +80,6 @@ export default class InteractionCreateEvent extends BaseEvent {
           .setDescription(`\`\`\`${getFileExtension}\n${codeString}\n\`\`\``)
           .setFooter({ text: "Guess the language" })
           .setColor("Random");
-
         const pendingMessage = await panelEmbedMessage.edit({
           embeds: [pendingEmbed],
           components: [],
@@ -116,7 +116,7 @@ export default class InteractionCreateEvent extends BaseEvent {
 
             message.reply(
               `🎉 | Awesome! You guessed it right!\nYou now have \`${
-                userQuery.guesses || 1
+                userQuery.guesses + 1 || 1
               }\` correct guesses!`
             );
 

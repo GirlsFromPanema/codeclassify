@@ -1,7 +1,7 @@
 import axios from "axios";
 import crypto from "crypto";
 
-import { discordFilePaths as filePaths } from "../../structures/FilePaths";
+import { githubFilePaths as filePaths } from "../../structures/FilePaths";
 
 interface GitHubFile {
   content: string;
@@ -14,8 +14,8 @@ const randomIndex: number = crypto.randomBytes(1)[0] % filePaths.length;
 export const filePath = filePaths[randomIndex];
 
 const accessToken = process.env.ACCESS_TOKEN;
-const username = "vKxni"; // https://github.com/vKxni/hugediscord
-const repo = "hugediscord";
+const username = "vKxni"; // https://github.com/vKxni/codeclassify
+const repo = "codeclassify";
 
 export async function getFileCode() {
   const response: GitHubApiResponse = await axios.get(

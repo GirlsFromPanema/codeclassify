@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@typegoose/typegoose": "^10.0.0",
     "@types/node-cron": "^3.0.6",
     "axios": "^0.24.0",
     "chalk": "^4.1.2",

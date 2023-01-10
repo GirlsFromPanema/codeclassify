@@ -11,6 +11,7 @@ const globPromise = promisify(glob);
 import { lstat, readdir } from "fs/promises";
 import { config } from "dotenv";
 import path from "path";
+import { client } from "..";
 
 config();
 export class ExtendedClient extends Discord.Client {
@@ -36,9 +37,7 @@ export class ExtendedClient extends Discord.Client {
       console.log(`Registering commands to ${guild.name}`);
       // global commands
     } else {
-      this.guilds.cache.forEach(async (guild) => {
-        await guild.commands.set(commands);
-      });
+      client.application.commands.set(commands)
       console.log(`Registering commands to all guilds`);
     }
   }

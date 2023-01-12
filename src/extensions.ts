@@ -14,7 +14,7 @@ export const fileExtensionsToLanguages: { [fileExtension: string]: string } = {
   groovy: ["Groovy"],
   hs: ["Haskell", "haskell"],
   hx: ["Haxe", "haxe"],
-  java: "Java",
+  java: ["Java",]
   js: ["JavaScript", "javascript],
   jl: ["Julia", "julia"]
   kt: ["Kotlin", "kotlin"],
@@ -28,9 +28,9 @@ export const fileExtensionsToLanguages: { [fileExtension: string]: string } = {
   py: ["Python", "python"],
   r: ["R",]
   rb: ["Ruby", "ruby"],
-  rs: "Rust",
-  sc: "Scala",
-  ts: "TypeScript",
-  v: "V",
-  zig: "Zig",
+  rs: ["Rust", "rust"],
+  sc: ["Scala", "scala"],
+  ts: ["TypeScript", "typescript"],
+  v: ["V"],
+  zig: ["Zig"],
 };

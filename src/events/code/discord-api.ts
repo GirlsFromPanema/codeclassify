@@ -98,7 +98,7 @@ export default class InteractionCreateEvent extends BaseEvent {
         collector.on("collect", async (message: Message) => {
           if (
             message.content === getFileExtension ||
-            message.content === fileExtensionsToLanguages[getFileExtension]
+            fileExtensionsToLanguages[getFileExtension].indexOf(message.content) !== -1
           ) {
             const userWhoGuessedIt = message.author;
 

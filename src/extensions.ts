@@ -1,4 +1,4 @@
-export const fileExtensionsToLanguages: { [fileExtension: string]: string } = {
+export const fileExtensionsToLanguages: { [fileExtension: string]: string[] } = {
   asm: ["Assembly", "assembly"],
   c: ["C"],
   cpp: ["C++","c++"],
@@ -11,12 +11,13 @@ export const fileExtensionsToLanguages: { [fileExtension: string]: string } = {
   ex: ["Elixir", "elixir"],
   fs: ["FSharp", "fsharp"],
   gleam: ["Gleam"],
+  go: ["Go", "go"],
   groovy: ["Groovy"],
   hs: ["Haskell", "haskell"],
   hx: ["Haxe", "haxe"],
-  java: ["Java",]
-  js: ["JavaScript", "javascript],
-  jl: ["Julia", "julia"]
+  java: ["Java",],
+  js: ["JavaScript", "javascript"],
+  jl: ["Julia", "julia"],
   kt: ["Kotlin", "kotlin"],
   lua: ["Lua"],
   nim: ["Nim"],
@@ -26,7 +27,7 @@ export const fileExtensionsToLanguages: { [fileExtension: string]: string } = {
   pl: ["Perl", "perl"],
   t: ["Perl", "perl"],
   py: ["Python", "python"],
-  r: ["R",]
+  r: ["R",],
   rb: ["Ruby", "ruby"],
   rs: ["Rust", "rust"],
   sc: ["Scala", "scala"],

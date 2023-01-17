@@ -64,9 +64,7 @@ export default class InteractionCreateEvent extends BaseEvent {
 
         const pendingEmbed = new EmbedBuilder()
           .setDescription(
-            `${member} started Game mode: \`Discord\`, game begins in <t:${
-              Math.floor(Date.now() / 1000) + 10
-            }:R>`
+            `${member} started Game mode: \`Discord\`, game begins in 5 seconds`
           )
           .setColor("Green");
 
@@ -87,7 +85,7 @@ export default class InteractionCreateEvent extends BaseEvent {
 
         setTimeout(() => {
           pendingMessage.edit({ embeds: [guessEmbed], components: [] });
-        }, 10000);
+        }, 5000);
 
         const filter = (m: Message) => !m.author.bot;
         const collector = interaction.channel.createMessageCollector({

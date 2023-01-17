@@ -27,7 +27,7 @@ export const fileExtensionsToLanguages: { [fileExtension: string]: string[] } = 
   pl: ["Perl", "perl"],
   t: ["Perl", "perl"],
   py: ["Python", "python"],
-  r: ["R",],
+  r: ["R"],
   rb: ["Ruby", "ruby"],
   rs: ["Rust", "rust"],
   sc: ["Scala", "scala"],

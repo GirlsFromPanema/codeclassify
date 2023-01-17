@@ -11,7 +11,7 @@ export const fileExtensionsToLanguages: { [fileExtension: string]: string[] } = 
   ex: ["Elixir", "elixir"],
   fs: ["FSharp", "fsharp"],
   gleam: ["Gleam"],
-  go: ["Go", "go"],
+  go: ["Go"],
   groovy: ["Groovy"],
   hs: ["Haskell", "haskell"],
   hx: ["Haxe", "haxe"],

@@ -31,15 +31,8 @@ export class ExtendedClient extends Discord.Client {
     return (await import(filePath))?.default;
   }
   async registerCommands({ commands, guildId }: RegisterCommandOptions) {
-    if (guildId) {
-      const guild = await this.guilds.fetch(guildId);
-      await guild.commands.set(commands);
-      console.log(`Registering commands to ${guild.name}`);
-      // global commands
-    } else {
-      client.application.commands.set(commands)
-      console.log(`Registering commands to all guilds`);
-    }
+    client.application.commands.set(commands);
+    console.log(`Registering commands to all guilds`);
   }
   async registerModules() {
     // Commands

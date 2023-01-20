@@ -10,7 +10,7 @@ interface GitHubApiResponse {
   data: GitHubFile;
 }
 
-const randomIndex: number = crypto.randomBytes(1)[0] % filePaths.length;
+const randomIndex: number = crypto.randomInt(0, filePaths.length);
 export const filePath = filePaths[randomIndex];
 
 const accessToken = process.env.ACCESS_TOKEN;

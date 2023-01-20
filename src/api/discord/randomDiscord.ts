@@ -1,5 +1,4 @@
 import axios from "axios";
-import crypto from "crypto";
 
 import { discordFilePaths as filePaths } from "../../structures/FilePaths";
 
@@ -10,8 +9,8 @@ interface GitHubApiResponse {
   data: GitHubFile;
 }
 
-const randomIndex: number = crypto.randomInt(0, filePaths.length);
-export const filePath = filePaths[randomIndex];
+const randomIndex = filePaths[Math.floor(Math.random() * filePaths.length)];
+export const filePath = randomIndex;
 
 const accessToken = process.env.ACCESS_TOKEN;
 const username = "vKxni"; // https://github.com/vKxni/hugediscord
